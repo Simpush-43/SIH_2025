@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import logo from '../assets/municipality logo.png'
 const LoginPAge = () => {
   const [department, setDepartment] = useState("");
   const [employeeId,setemployeeId] = useState('');
@@ -20,7 +20,7 @@ const LoginPAge = () => {
     <div className="login-container">
       <form className="login-box" onSubmit={handleProcced}>
         <img
-          src="https://via.placeholder.com/100"
+          src={logo}
           alt="Municipal Logo"
           className="logo"
         />
