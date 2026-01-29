@@ -1,122 +1,116 @@
-// A mock database of issues
 const MOCK_ISSUES = {
-    "ward-5": [
-    {
-      "id": "ISSUE-101",
-      "title": "Broken Water Pipe",
-      "description": "Major leak at Rajwada Palace entrance.",
-      "lat": 22.7177, "lng": 75.8545,
-      "status": "Pending",
-      "reportedAt": "2025-09-22T10:00:00Z"
-    },
-    {
-      "id": "ISSUE-102",
-      "title": "Garbage Overflow at Krishnapura Chhatri",
-      "description": "Waste bin has not been cleared for 3 days.",
-      "lat": 22.7159, "lng": 75.8596,
-      "status": "In Progress",
-      "reportedAt": "2025-09-21T14:30:00Z"
-    },
-    {
-      "id": "ISSUE-103",
-      "title": "Pothole on MG Road",
-      "description": "Deep pothole causing traffic issues near Treasure Island Mall.",
-      "lat": 22.7196, "lng": 75.8775,
-      "status": "Completed",
-      "reportedAt": "2025-09-15T09:00:00Z"
-    },
-    {
-      "id": "ISSUE-104",
-      "title": "Blocked Drain in Sarafa Bazaar",
-      "description": "Main drain is blocked, causing waterlogging in the food street area.",
-      "lat": 22.7165, "lng": 75.8560,
-      "status": "Pending",
-      "reportedAt": "2025-09-23T09:15:00Z"
-    },
-    {
-      "id": "ISSUE-105",
-      "title": "Damaged Bench at Lal Bagh Palace Park",
-      "description": "A public bench near the main fountain is broken.",
-      "lat": 22.7009, "lng": 75.8475,
-      "status": "Completed",
-      "reportedAt": "2025-08-30T11:00:00Z"
-    }
-  ],
-  "ward-12": [
-    {
-      "id": "ISSUE-201",
-      "title": "Streetlight Outage",
-      "description": "Streetlights on AB Road near C21 Mall are not working.",
-      "lat": 22.7533, "lng": 75.8937,
-      "status": "Pending",
-      "reportedAt": "2025-09-23T08:00:00Z"
-    },
-    {
-      "id": "ISSUE-202",
-      "title": "Malfunctioning Traffic Signal",
-      "description": "The traffic light at Vijay Nagar square is stuck on red for one lane.",
-      "lat": 22.7523, "lng": 75.8943,
-      "status": "In Progress",
-      "reportedAt": "2025-09-22T18:00:00Z"
-    },
-    {
-        "id": "ISSUE-203",
-        "title": "Damaged Road Divider",
-        "description": "Road divider near Malhar Mega Mall is broken and poses a hazard.",
-        "lat": 22.7505, "lng": 75.8940,
-        "status": "Completed",
-        "reportedAt": "2025-09-18T12:00:00Z"
-    }
-  ],
-  "ward-8": [
+  "ward-8": [ // Koni Central
     {
       "id": "ISSUE-301",
-      "title": "Clogged Sewer Line",
-      "description": "Sewer overflow near Palasia Square, causing foul smell and hygiene issues.",
-      "lat": 22.7277, "lng": 75.8857,
+      "title": "Sewer Overflow near GGU Gate",
+      "category": "Overflow trashBin",
+      "description": "Foul smell and sewage leakage near Guru Ghasidas University main gate.",
+      "location": "GGU Main Gate, Koni, Bilaspur",
+      "lat": 22.1293, 
+      "lng": 82.1360,
       "status": "Pending",
-      "reportedAt": "2025-09-23T11:30:00Z"
+      "reportedAt": "2026-01-29T11:30:00Z"
     },
     {
       "id": "ISSUE-302",
-      "title": "Faded Zebra Crossing",
-      "description": "Zebra crossing near St. Paul School is barely visible, dangerous for students.",
-      "lat": 22.7231, "lng": 75.8858,
-      "status": "Completed",
-      "reportedAt": "2025-09-05T16:00:00Z"
+      "title": "Streetlight Outage",
+      "category": "Streetlight Outage",
+      "description": "Three streetlights are not working on the Arpa Bridge approach.",
+      "location": "Arpa Bridge Road, Koni",
+      "lat": 22.1410, 
+      "lng": 82.1480,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T07:20:00Z"
     },
     {
       "id": "ISSUE-303",
-      "title": "Unauthorized Encroachment",
-      "description": "Street vendors have encroached upon the footpath on Greater Kailash Road.",
-      "lat": 22.7354, "lng": 75.8988,
+      "title": "Pothole on Main Road",
+      "category": "Pothole",
+      "description": "Deep pothole causing traffic issues near the Koni Petrol Pump.",
+      "location": "Main Road, Koni Petrol Pump",
+      "lat": 22.1330, 
+      "lng": 82.1425,
       "status": "In Progress",
-      "reportedAt": "2025-09-20T13:45:00Z"
+      "reportedAt": "2026-01-27T13:45:00Z"
     }
   ],
-  "ward-19": [
+  "ward-5": [ // Birkona Entrance
+    {
+      "id": "ISSUE-101",
+      "title": "Broken Water Pipe",
+      "category": "Broken Pipe",
+      "description": "Major leak in the supply line near Birkona Primary School.",
+      "location": "Birkona Road, near School, Bilaspur",
+      "lat": 22.1520, 
+      "lng": 82.1550,
+      "status": "Completed",
+      "reportedAt": "2026-01-25T16:00:00Z"
+    },
+    {
+      "id": "ISSUE-102",
+      "title": "Garbage Dumping at Chowk",
+      "category": "Overflow trashBin",
+      "description": "Construction debris and household waste being dumped near Birkona Chowk.",
+      "location": "Birkona Chowk, Bilaspur",
+      "lat": 22.1535, 
+      "lng": 82.1585,
+      "status": "In Progress",
+      "reportedAt": "2026-01-28T17:00:00Z"
+    }
+  ],
+  "ward-12": [ // Koni Police Station Area
+    {
+      "id": "ISSUE-201",
+      "title": "Water Stagnation",
+      "category": "Pothole",
+      "description": "Water logging due to road depression near the station.",
+      "location": "Near Koni Police Station, Bilaspur",
+      "lat": 22.1265, 
+      "lng": 82.1340,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T08:00:00Z"
+    },
+    {
+      "id": "ISSUE-202",
+      "title": "Loose Electrical Wires",
+      "category": "Streetlight Outage",
+      "description": "Exposed wires hanging from pole near the police quarters.",
+      "location": "Police Quarters, Koni",
+      "lat": 22.1270, 
+      "lng": 82.1355,
+      "status": "In Progress",
+      "reportedAt": "2026-01-29T09:30:00Z"
+    }
+  ],
+  "ward-19": [ // Birkona Internal
     {
       "id": "ISSUE-401",
-      "title": "Damaged Public Water Tap",
-      "description": "The public water tap near Annapurna Temple is broken and leaking continuously.",
-      "lat": 22.6989, "lng": 75.8293,
+      "title": "Damaged Public Tap",
+      "category": "Broken Pipe",
+      "description": "The public water tap is broken and leaking continuously.",
+      "location": "Internal Road, Birkona Village",
+      "lat": 22.1550, 
+      "lng": 82.1600,
       "status": "Pending",
-      "reportedAt": "2025-09-22T07:20:00Z"
+      "reportedAt": "2026-01-22T07:20:00Z"
     },
     {
       "id": "ISSUE-402",
-      "title": "Illegal Waste Dumping",
-      "description": "Construction debris and household waste being dumped in vacant plot in Sudama Nagar, Sector D.",
-      "lat": 22.7051, "lng": 75.8355,
+      "title": "Blocked Drain",
+      "category": "Overflow trashBin",
+      "description": "Main drainage line blocked by plastic waste.",
+      "location": "Birkona Market Area",
+      "lat": 22.1540, 
+      "lng": 82.1570,
       "status": "In Progress",
-      "reportedAt": "2025-09-19T17:00:00Z"
+      "reportedAt": "2026-01-19T17:00:00Z"
     }
   ]
 };
 
 // Simulates fetching issues for a specific area
 export const getIssuesByArea = (areaId) => {
-  console.log(`Fetching issues for area: ${areaId}`);
+  console.log(`Fetching mock issues for area: ${areaId}`);
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(MOCK_ISSUES[areaId] || []);
@@ -130,12 +124,14 @@ export const updateIssueStatus = (issueId, areaId, newStatus, remarks) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const issuesInArea = MOCK_ISSUES[areaId];
-      const issueIndex = issuesInArea.findIndex(issue => issue.id === issueId);
-      if (issueIndex !== -1) {
-        issuesInArea[issueIndex].status = newStatus;
-        console.log("Update successful");
+      if (issuesInArea) {
+        const issueIndex = issuesInArea.findIndex(issue => issue.id === issueId);
+        if (issueIndex !== -1) {
+          issuesInArea[issueIndex].status = newStatus;
+          console.log("Mock Update successful");
+        }
       }
       resolve({ success: true });
-    }, 500); // Simulate network delay
+    }, 500); 
   });
 };
