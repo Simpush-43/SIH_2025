@@ -19,7 +19,7 @@ const icons = {
 }
 const MapComponet = ({issues}) => {
     // Default center for Indore
-  const mapCenter = [22.7196, 75.8577]
+  const mapCenter = [22.1300, 82.1400];
   return (
 <>
       <MapContainer center={mapCenter} zoom={14} style={{ height: '100%', width: '100%' }}>
