@@ -62,21 +62,15 @@ const LoginPAge = () => {
           </select>
         </div>
 
-<div className="form-group">
-  <label htmlFor="area">Select Ward Area</label>
-  <select 
-    id="area" 
-    value={area} 
-    onChange={(e) => setArea(e.target.value)}
-    className="form-control" // Added for better styling
-  >
-    {/* Ward values stay the same to match your MOCK_ISSUES keys */}
-    <option value="ward-8">Ward 8 (Koni Central / GGU Area)</option>
-    <option value="ward-5">Ward 5 (Birkona Entrance / Main Road)</option>
-    <option value="ward-12">Ward 12 (Koni Police Station / Thana)</option>
-    <option value="ward-19">Ward 19 (Birkona Village / Internal)</option>
-  </select>
-</div>
+        <div className="form-group">
+          <label htmlFor="area">Select Ward Area</label>
+          <select id="area" value={area} onChange={(e) => setArea(e.target.value)}>
+            <option value="ward-5">Ward 5 (Rajwada Area)</option>
+            <option value="ward-12">Ward 12 (Vijay Nagar)</option>
+            <option value="ward-8">Ward 8 (Palasia)</option>
+            <option value="ward-19">Ward 19 (Annapurna)</option>
+          </select>
+        </div> improve this too for birkona koni keep ward same >
 
         {/* --- Initial Filtering Field --- */}
         <div className="form-group">
