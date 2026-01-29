@@ -12,6 +12,102 @@ const MOCK_ISSUES = {
       "reportedAt": "2026-01-29T11:30:00Z"
     },
     {
+      "id": "ISSUE-303",
+      "title": "Deep Pothole at Petrol Pump",
+      "category": "Pothole",
+      "description": "Hazardous deep pothole causing vehicle damage near the Koni Petrol Pump.",
+      "location": "Main Road, Koni Petrol Pump",
+      "lat": 22.1330, 
+      "lng": 82.1425,
+      "status": "In Progress",
+      "reportedAt": "2026-01-27T13:45:00Z"
+    },
+    {
+      "id": "ISSUE-311",
+      "title": "Edge Subsidence near Arpa Bridge",
+      "category": "Pothole",
+      "description": "The road edge is crumbling into the embankment, narrowing the drivable path.",
+      "location": "Arpa Bridge Approach, Koni",
+      "lat": 22.1405, 
+      "lng": 82.1475,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T14:20:00Z"
+    }
+  ],
+  "ward-5": [ // Birkona Entrance
+    {
+      "id": "ISSUE-103",
+      "title": "Main Road Surface Cracking",
+      "category": "Pothole",
+      "description": "Severe alligator cracking on the road surface for a 50-meter stretch.",
+      "location": "Birkona Main Road entrance, Bilaspur",
+      "lat": 22.1510, 
+      "lng": 82.1540,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T10:15:00Z"
+    },
+    {
+      "id": "ISSUE-104",
+      "title": "Shoulder Erosion after Rain",
+      "category": "Pothole",
+      "description": "The unpaved shoulder of the road has washed away, creating a 6-inch drop-off.",
+      "location": "Internal Connect Road, Birkona",
+      "lat": 22.1525, 
+      "lng": 82.1565,
+      "status": "In Progress",
+      "reportedAt": "2026-01-28T16:45:00Z"
+    }
+  ],
+  "ward-12": [ // Koni Police Station Area
+    {
+      "id": "ISSUE-201",
+      "title": "Water Stagnation / Sunken Road",
+      "category": "Pothole",
+      "description": "Road has sunken significantly, leading to permanent water logging even in dry weather.",
+      "location": "Near Koni Police Station, Bilaspur",
+      "lat": 22.1265, 
+      "lng": 82.1340,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T08:00:00Z"
+    },
+    {
+      "id": "ISSUE-203",
+      "title": "Damaged Road Divider/Kerb",
+      "category": "Pothole",
+      "description": "The concrete kerb is broken and scattered on the road, posing a nighttime hazard.",
+      "location": "Koni Thana Junction",
+      "lat": 22.1275, 
+      "lng": 82.1345,
+      "status": "Completed",
+      "reportedAt": "2026-01-20T11:00:00Z"
+    }
+  ],
+  "ward-19": [ // Birkona Internal
+    {
+      "id": "ISSUE-403",
+      "title": "Gravel Exposure on Village Road",
+      "category": "Pothole",
+      "description": "Top bitumen layer completely gone; sharp gravel exposed causing tyre punctures.",
+      "location": "Birkona Village Internal Street",
+      "lat": 22.1545, 
+      "lng": 82.1590,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T12:00:00Z"
+    }
+  ]
+  "ward-8": [ // Koni Central
+    {
+      "id": "ISSUE-301",
+      "title": "Sewer Overflow near GGU Gate",
+      "category": "Overflow trashBin",
+      "description": "Foul smell and sewage leakage near Guru Ghasidas University main gate.",
+      "location": "GGU Main Gate, Koni, Bilaspur",
+      "lat": 22.1293, 
+      "lng": 82.1360,
+      "status": "Pending",
+      "reportedAt": "2026-01-29T11:30:00Z"
+    },
+    {
       "id": "ISSUE-302",
       "title": "Streetlight Outage",
       "category": "Streetlight Outage",
